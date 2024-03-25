@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Kayıt Formu</h1>
+    <h2>Form</h2>
+
+<form action="/submit_form.html" method="get">
+    <!-- Text Input -->
+    <label for="name">Ad:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="surname">Soyad:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <!-- Email Input -->
+    <label for="email">E-posta:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <!-- Password Input -->
+    <label for="password">Şifre:</label><br>
+    <input type="password" id="pwd" name="pwd" minlength="8" required><br>
+
+    <!-- Radio Button Input -->
+    <p>Cinsiyet:</p>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Erkek</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Kadın</label><br>
+
+    <!-- Checkbox Input -->
+    <p>Favori Meyve</p>
+    <select name="Meyve" id="meyve">
+    <option value="elma">Elma</option>
+    <option value="armut">Armut</option>
+    <option value="muz">Muz</option>
+    <option value="çilek">Çilek</option>
+    <option value="karpuz">Karpuz</option>
+    <option value="kavun">Kavun</option>
+    <option value="üzüm">Üzüm</option>
+    <option value="portakal">Portakal</option>
+    </select><br>
+
+    <!-- Textarea Input -->
+    <label for="message">Mesaj:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+
+    <!-- Submit Button -->
+    <input type="submit" value="Gönder">
+
+</form>
+    
+</body>
+</html>
