@@ -1,0 +1,24 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    color: #f50000d5;
+    margin-top: 20px;
+}
+h4{
+    text-align: left;
+    color: #ecc40e;
+}
+p{
+    font-size: 15px;
+    color: #2e2c2c;
+    font-weight: normal;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
