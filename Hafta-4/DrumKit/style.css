@@ -1,0 +1,60 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url('assets/drum-set-image.webp') no-repeat center center fixed; 
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+#drum-kit-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slogan {
+  font-size: 2em; 
+  font-weight: bold; 
+  color: #ffcc00; 
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); 
+  margin-bottom: 2em; 
+  padding: 0.5em; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px; 
+  display: inline-block; 
+}
+.drum-pad {
+  border: none;
+  border-radius: 5px;
+  background-color: #44475a;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); 
+  transition: all 0.1s ease-in-out;
+}
+
+.drum-pad:active, .drum-pad.active {
+  transform: scale(0.9);
+  box-shadow: 0 0 20px #ff8800; 
+  background-color: #6272a4;
+}
+
+#drum-image {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
