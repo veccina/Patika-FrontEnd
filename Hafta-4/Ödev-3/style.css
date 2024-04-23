@@ -1,0 +1,102 @@
+
+body {
+  font-family: 'Zilla Slab', serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.unsplash.com/photo-1712686944847-ea4660674cc4?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Placeholder for an Asian ink-style background */
+  background-size: cover;
+  background-attachment: fixed;
+  animation: BackgroundFlow 30s linear infinite;
+}
+
+@keyframes BackgroundFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.title h2 {
+  margin-top: 25px;
+  font-family: 'Great Vibes', cursive;
+  color: #fff; 
+  font-size: 3rem; 
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+}
+
+
+.btn-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #8a2b06;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #561d02;
+  transform: scale(1.05);
+}
+
+.section-center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: calc(50% - 10px);
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #8a2b06;
+}
+
+.menu-text {
+  font-size: 1.1rem; 
+  line-height: 1.6; 
+  border-top: 1px solid #eee;
+  padding-top: 5px;
+}
+
+
+.photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
