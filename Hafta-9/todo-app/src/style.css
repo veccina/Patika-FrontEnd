@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Özelleştirilmiş stiller */
 body {
   @apply bg-gradient-to-r from-green-400 to-blue-500 text-gray-900;
 }

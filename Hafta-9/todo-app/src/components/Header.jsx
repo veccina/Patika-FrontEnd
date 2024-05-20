@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import amblem from '../assets/amblem.svg'; // Amblem resminin yolunu belirtin
+import amblem from '../assets/amblem.svg';
 
 const Header = ({ addTodo }) => {
   const [newTodo, setNewTodo] = useState('');
@@ -16,7 +16,7 @@ const Header = ({ addTodo }) => {
     <header className="header">
       <div className="flex justify-center items-center mb-4">
         <img src={amblem} alt="Amblem" className="amblem" />
-        <h1 className="text-6xl" style={{ color: '#4CAF50' }}>todos</h1> {/* Renk amblemle uyumlu */}
+        <h1 className="text-6xl" style={{ color: '#4CAF50' }}>todos</h1> {}
       </div>
       <form onSubmit={handleSubmit}>
         <input
