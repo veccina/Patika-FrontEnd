@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Özelleştirilmiş stiller */
+body {
+  @apply bg-gradient-to-r from-green-400 to-blue-500 text-gray-900;
+}
+
+.todoapp {
+  @apply bg-white shadow-lg rounded-lg overflow-hidden p-6 mt-10 mx-auto max-w-xl;
+}
+
+header h1 {
+  @apply text-6xl font-thin text-center ml-4;
+  color: #4CAF50;
+}
+
+.new-todo {
+  @apply w-full p-4 text-xl border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-gray-900;
+}
+
+.main {
+  @apply mt-4;
+}
+
+.toggle-all + label {
+  @apply cursor-pointer text-gray-500;
+}
+
+.todo-list {
+  @apply mt-4;
+}
+
+.todo-list li {
+  @apply flex items-center p-4 border-b border-gray-300 transition-all duration-200 ease-in-out;
+}
+
+.todo-list li:hover {
+  @apply bg-gray-100;
+}
+
+.todo-list li .toggle {
+  @apply mr-4;
+}
+
+.todo-list li label {
+  @apply flex-1 text-gray-800 text-lg font-bold;
+}
+
+.todo-list li.completed label {
+  @apply line-through text-gray-500;
+}
+
+.todo-list li .destroy {
+  @apply ml-4 text-red-500 hover:text-red-700 cursor-pointer transition-all duration-200 ease-in-out;
+}
+
+.footer {
+  @apply flex justify-between items-center mt-4 text-gray-800;
+}
+
+.filters {
+  @apply flex space-x-2;
+}
+
+.filters li a {
+  @apply cursor-pointer text-gray-500 hover:text-blue-500 transition-all duration-200 ease-in-out;
+}
+
+.filters li a.selected {
+  @apply font-bold text-blue-500;
+}
+
+.clear-completed {
+  @apply text-red-500 hover:text-red-700 transition-all duration-200 ease-in-out;
+}
+
+.info {
+  @apply text-center mt-8 text-gray-200;
+}
+
+.amblem {
+  @apply w-12 h-12;
+}
