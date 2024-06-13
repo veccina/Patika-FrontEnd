@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white;
+}
+
+/* Light Speed Animation */
+@keyframes lightSpeed {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.lightspeed-background {
+  background: url('./assets/starfield.webp') repeat;
+  background-size: cover;
+  animation: lightSpeed 5s linear infinite;
+}
+.home-container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
